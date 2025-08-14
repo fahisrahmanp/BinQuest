@@ -1,0 +1,129 @@
+<!-- templates/todo_search.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/logo.png' %}" /> 
+    <title>Biodegrable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        li {
+            background-color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        li a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        li a:hover {
+            color: #0056b3;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .home_button {
+            position: absolute;
+            top: 10px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>BIODEGRABLE</h1>
+    <form method="GET">
+        <label for="category">Category:</label>
+        <input type="text" id="category" name="category" placeholder="Enter category (Biodegrable)">
+        <label for="place">Place:</label>
+        <input type="text" id="place" name="place" placeholder="Enter place">
+        <input type="submit" value="Search">
+    </form>
+
+    <div class="home_button">
+        <form action="{% url 'index' %}">
+             <button class="home" >Home</button>
+        </form>  
+    </div>
+    
+    <ul>
+    {% for todo in todos %}
+        <li>{{ todo }} -  <a href="{% url 'redirect_to_location' todo.id %}">View Location</a></li>
+    {% empty %}
+        <li>No todos found</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

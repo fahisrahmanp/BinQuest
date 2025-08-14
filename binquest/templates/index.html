@@ -1,0 +1,313 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8" />
+        <title>BinQuest</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" />
+        <link rel="stylesheet" href="{% static 'css/fontello.css' %}" type="text/css" />
+        <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/logo.png' %}" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:image" content="" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <style>
+            section#review {
+              background-color: #f4f4f4;
+              padding: 20px;
+              height: 100vh;
+            
+            }
+          
+            section#review section.box_to_box {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+            }
+          
+            section#review section.box_to_box div.box {
+              flex: 0 0 calc(33.33% - 20px);
+              background-color: #fff;
+              margin-bottom: 20px;
+              padding: 20px;
+              border-radius: 5px;
+              box-sizing: border-box;
+            }
+          
+            section#review section.box_to_box div.box div.review_box {
+              background-color: #f9f9f9;
+              border-radius: 5px;
+              padding: 20px;
+              margin: 0 0 20px 0;
+            }
+          
+            section#review section.box_to_box div.box div.review_box h2 {
+              margin-top: 0;
+              font-size: 1.2rem;
+              color: #333;
+            }
+          
+            section#review section.box_to_box div.box div.review_box p {
+              margin: 10px 0;
+              line-height: 1.6;
+              color: #666;
+            }
+          
+            section#review section.box_to_box div.box div.review_box p.author {
+              font-style: italic;
+              color: #999;
+            }
+          </style>
+    </head>
+    <body>
+        <header>
+                <h1>
+                    <a href="#">
+                        <img src="{% static 'images/logo.png' %}" alt="LOGO"/>
+                    </a>
+                </h1>
+                <nav class="middle">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#service">About us</a></li>
+                        <li><a href="#review">Review</a></li>
+                        <li><a href='contact'>Contact</a></li>
+                    </ul>
+                </nav> 
+                <nav class="right">
+                    <a href='signup' class="button">Admin</a>
+                </nav>
+        </header>
+        <section id="spotlight">
+            <section class="wrapper">
+                <div class="container">
+                    <div class="left">
+                        <h2>The quickest and easiest online video editor for every team</h2>
+                        <p>"Embrace the eco-revolution with our waste bin, where every discarded item finds a new purpose in shaping a sustainable tomorrow."</p>
+                    </div>
+                    <div class="right">
+                            <div class="home-img">
+                                <img src="{% static 'images/img.png' %}" alt="HOME IMG"/>
+                            </div>
+                            
+                    </div>
+                    <div class="bottom">
+                        <ul>
+                            <li><a href="search"><button type="button1" >Biodegradable</button></li></a>
+                            <li><a href="nonbio_search"><button type="button2">Non Biodegradable</button></li></a>
+                            <li><a href="identify"><button type="button3">Identify</button></li></a>
+                        </ul>
+                    </div>
+                </div>
+                    <span>Trusted by content creators accross the world</span>
+                    <div class="spotlight-bottom">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="{% static 'images/logo-bin-e.svg' %}" alt="IMAGE_BRAND"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="{% static 'images/logo-mdpi.png' %}" alt="IMAGE_BRAND"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="{% static 'images/logo-wired.png' %}" alt="IMAGE_BRAND"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="{% static 'images/logo-nbc.svg' %}" alt="IMAGE_BRAND"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="{% static 'images/logo-birchbox.svg' %}" alt="IMAGE_BRAND"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="{% static 'images/USA-Today-logo_24.svg' %}" alt="IMAGE_BRAND"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="{% static 'images/logo-hubspot.svg' %}" alt="IMAGE_BRAND"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="{% static 'images/logo-tmz.svg' %}" alt="IMAGE_BRAND"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+            </section>
+        </section>
+        <section id="service">
+            <section class="wrapper">
+                <div class="item">
+                    <div class="left">
+                        <img src="{% static 'images/img2.avif' %}" alt="HS IMAGE">
+                    </div>
+                    <div class="right">
+                        <a href="#"><img src="{% static 'images/edit-white.svg' %}" alt=""/></a>
+                        <h2>Revolutionizing the waste management system</h2>
+                        <p>Bin-e is an AI-based smart waste bin, designed for public places, enabling them to simplify recycling. It sorts and compresses the waste automatically, controls the fill level and processes data for convenient waste management.</p>
+                        <hr/>
+                        <p class="italic">“The greatest threat to our planet is the belief that someone else will save it.”</p>
+                        <p class="bold"><span>Robert Swan</span>,Expoler </p>
+                        <small><img src="{% static 'images/logo-bin-e.svg' %}" alt="HUBSPOT"/></small>
+                    </div>
+                </div>
+            </section>
+            <div class="item-bg">
+                <section class="wrapper">
+                    <div class="left">
+                        <img src="{% static 'images/img3-removebg.png' %}" alt="HS IMAGE">
+                    </div>
+                    <div class="right">
+                        <a href=""><img src="{% static 'images/lightning-white.svg' %}" alt="LIGHTNING"></a>
+                        <h2>Revolutionizing the waste management system</h2>
+                        <p> It sorts and compresses the waste automatically, controls the fill level and processes data for convenient waste management</p>
+                        <hr/>
+                        <p class="italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste tempora laudantium, quae  excepturi. Temporibus blanditiis fuga, nulla culpa vero quod ipsum.</p>
+                        <p class="bold"><span>Charlie Reiff</span>,Social Video Editor & Animator</p>
+                        <small><img src="{% static 'images/logo-hubspot.svg' %}" alt=""/></small>
+                    </div>
+                </section>
+            </div>
+            <section class="wrapper">
+                <div class="item">
+                    <div class="left">
+                        <img src="{% static 'images/img4.jpg' %}" alt="HS IMAGE"/>
+                    </div>
+                    <div class="right">
+                        <a href="#" class="green"><img src="{% static 'images/film-white.svg' %}" alt="FILM"></a>
+                        <h2>Speed up video production time</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt repellat tenetur vitae eaque numquam. Sed, , doloremque, cum quae iste.</p>
+                        
+                        <hr/>
+                        <p class="italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste tempora laudantium, quae aspernatur, nulla culpa vero quod ipsum.</p>
+                        <p class="bold"><span>Charlie Reiff</span>,Social Video Editor & Animator</p>
+                        <small><img src="{% static 'images/USA-Today-logo_24.svg' %}" alt=""></small>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="review">
+            <section class="box_to_box">
+              <div class="box">
+                <div class="review_box">
+                  <h2>Great Product!</h2>
+                  <p>This product exceeded my expectations. It's high-quality and works perfectly. I would definitely recommend it to others.</p>
+                  <p class="author">- John Doe</p>
+                </div>
+              </div>
+          
+              <div class="box">
+                <div class="review_box">
+                  <h2>Not Bad</h2>
+                  <p>Overall, I'm satisfied with this product. It's decent for the price, but there are a few minor issues that could be improved.</p>
+                  <p class="author">- Jane Smith</p>
+                </div>
+              </div>
+          
+              <div class="box">
+                <div class="review_box">
+                  <h2>Disappointing</h2>
+                  <p>I had high hopes for this product, but it didn't meet my expectations. It feels cheaply made and broke after only a few uses.</p>
+                  <p class="author">- David Johnson</p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="review_box">
+                  <h2>Excellent Service!</h2>
+                  <p>The service provided was outstanding. Quick response times and helpful staff made my experience enjoyable. Highly recommended!</p>
+                  <p class="author">- Emily Adams</p>
+                </div>
+              </div>
+          
+              <div class="box">
+                <div class="review_box">
+                  <h2>Impressive Quality</h2>
+                  <p>I'm impressed by the quality of the product. It's durable and well-crafted. Definitely worth the investment.</p>
+                  <p class="author">- Michael Brown</p>
+                </div>
+              </div>
+          
+              <div class="box">
+                <div class="review_box">
+                  <h2>Good Value</h2>
+                  <p>This product offers good value for the price. It's reliable and functions as expected. I'm happy with my purchase.</p>
+                  <p class="author">- Sarah Wilson</p>
+                </div>
+              </div>
+            </section>
+          </section>
+        <section id="help">
+            <section class="wrapper">
+                <div class="left">
+                    <h3>Ready to get <br> started</h3>
+                    <p>It suggests a desire to delve into how BinQuest can assist in content creation, community engagement, monetization, and other aspects relevant to content creators. This phrase reflects an eagerness to initiate the process of using BinQuest and potentially leveraging its tools and resources for content creation and sharing endeavors.</p>
+                    <hr>
+                    <h4>Why do content creators choose BinQuest?</h4>
+                    <p class="italics">Content creators choose BinQuest for its user-friendly interface, diverse features, and supportive community. The platform offers monetization opportunities, flexibility in content creation, and access to resources for success. With BinQuest, creators can easily engage with their audience, collaborate with peers, and earn income from their work, making it a preferred choice for those looking to create and share content online.</p>
+                    <span>Team BinQuest</span>
+                    <small>Director of BinQuest</small>
+                    <div class="round-image">
+                        <ul>
+                            <li>
+                                <img src="{% static 'images/profile1.jpg' %}" alt="">
+                            </li>
+                            <li>
+                                <img src="{% static 'images/profile2.jpg' %}" alt="">
+                            </li>
+                            <li>
+                                <img src="{% static 'images/profile3.jpg' %}" alt="">
+                            </li>
+                            <li>
+                                <img src="{% static 'images/profile4.jpg' %}" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                </div>
+                <div class="right">
+                        <h3>Help us get to know you</h3>
+                        <ul>
+                            <!-- <li class="input">
+                                <input type="email" placeholder="Work email">
+                                <input type="text" placeholder="First name">
+                                <input type="text" placeholder="Last Name">
+                                <input type="text" placeholder="Subject">
+                            </li> -->
+                        </ul>
+                        <a href="contact" class="button">Get a talk</a>
+                </div>
+            </section>
+        </section>
+        <footer>
+            <section class="wrapper">
+                <div class="left">
+                <h6>The Online video editor trusted by teams to make proffesional video in minutes</h6>
+                <ul class="icon">
+                    <li><a href="https://www.facebook.com/"><img src="{% static 'images/facebook-blue.svg' %}" alt=""></a> </li>
+                    <li><img src="{% static 'images/Instagram.svg' %}" alt=""> </li>
+                    <li><img src="{% static 'images/twitter-blue.svg' %}" alt=""> </li>
+                    <li><img src="{% static 'images/linkedin-blue.svg' %}" alt=""> </li>
+                    <li><img src="{% static 'images/youtube-blue.svg' %}" alt=""> </li>
+                </ul>
+            </sectionn>
+        </footer>
+    </body>
+</html>
+
+
+
+
+

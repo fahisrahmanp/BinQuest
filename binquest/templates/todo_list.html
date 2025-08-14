@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/logo.png' %}" /> 
+    <title>Admin View</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .map-button {
+            background-color: #007bff;
+        }
+
+        .map-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+        <ul>
+            {% for todo in todos %}
+            <li>
+                Latitude: {{ todo.latitude }}, Longitude: {{ todo.longitude }}, Category: {{ todo.category }}, Place: {{ todo.place }}
+                <form method="post" action="{% url 'delete_todo' todo.id %}">
+                    {% csrf_token %}
+                    <button type="submit">Delete</button>
+                </form>
+                <!-- Button to redirect to Google Maps -->
+                <button class="map-button" onclick="redirectToGoogleMaps('{{ todo.latitude }}', '{{ todo.longitude }}')">View on Google Maps</button>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <!-- Button to redirect to Add Todo page -->
+        <a href="{% url 'add_todo' %}">
+            <button>Add Todo</button>
+        </a>
+    </div>
+
+    <script>
+        function redirectToGoogleMaps(latitude, longitude) {
+            // Construct Google Maps URL with the latitude and longitude
+            var googleMapsURL = "https://www.google.com/maps?q=" + latitude + "," + longitude;
+
+            // Redirect to Google Maps
+            window.location.href = googleMapsURL;
+        }
+    </script>
+</body>
+</html>

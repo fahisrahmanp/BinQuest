@@ -1,0 +1,2178 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+ol,ul {
+  list-style: none;
+}
+del {
+  text-decoration: line-through;
+}
+body {
+  font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: #000;
+  overflow-x: hidden;
+  min-width: 320px;
+  font-weight: 500;
+}
+input,textarea,select {
+  font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+a {
+  color: #000;
+}
+.thumb {
+  display: block;
+}
+.thumb img {
+  display: block;
+  width: 100%;
+}
+p {
+  line-height: 1.6em;
+  font-size: 16px;
+  font-family: "GT-Eesti", Arial;
+  font-weight: 500;
+  color: #000;
+}
+.hidden {
+  display: none;
+}
+br.clear {
+  clear: both;
+  line-height: 0;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+::placeholder {
+  color: #9b9b9b;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #9b9b9b;
+}::-ms-input-placeholder {
+  color: #9b9b9b;
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+}
+header  h1{
+  width: 10%;
+}
+header  h1 a{
+  display: inline-block;
+}
+header  h1 a img{
+  width: 100%;
+  display: block;
+}
+header  nav.middle{
+  width: 40%;
+}
+header  nav.middle ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header  nav.middle ul li {
+  
+}
+header  nav.middle ul li a {
+  display: inline-block;
+  font-weight: 500;
+}
+header  nav.right{
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header  nav.right a{
+  display: inline-block;
+  font-weight: 500;
+}
+header  nav.right a.button{
+  display: inline-block;
+  padding: 10px 10px;
+  background: #fce4da;
+  color: #f57a4d;
+  border-radius: 5px;
+  font-weight: 500;
+}
+#spotlight{
+  padding: 50px 0;
+}
+#spotlight section.wrapper {
+
+}
+#spotlight section.wrapper div.container {
+  display: flex;
+}
+#spotlight section.wrapper div.container div.left{
+  width: 50%;
+  padding: 30px 0;
+}
+#spotlight section.wrapper div.container div.left h2{
+  margin-bottom: 50px;
+  font-size: 57px;
+  font-weight: 700;
+}
+#spotlight section.wrapper div.container div.left p{
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+#spotlight section.wrapper div.container .bottom {
+  position: absolute;
+  bottom: 141px; /* Adjust as needed */
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+#spotlight section.wrapper div.container .bottom ul {
+  display: flex;
+  list-style-type: none;
+  position: absolute;
+  top: -25px;
+  left: 150px;
+}
+
+
+
+#spotlight section.wrapper div.container .bottom ul li button {
+  padding: 20px 30px;
+  color: #fff;
+  background: blue;
+  border-radius: 85px;
+  font-weight: 600;
+}
+
+#spotlight section.wrapper div.container .bottom ul li button:hover {
+  background-color: #7a76c3;
+}
+#spotlight section.wrapper div.container div.right{
+  position: relative;
+}
+#spotlight section.wrapper div.container div.right div.home-img{
+  
+}
+#spotlight section.wrapper div.container div.right div.home-img img{
+  width: 100%;
+  display: block;
+}
+#spotlight section.wrapper div.container div.right div.dot-img {
+  position: absolute;
+  left: 33%;
+  bottom: 90%;
+}
+#spotlight section.wrapper div.container div.right div.dot-img img{
+  width: 100%;
+  display: block;
+}
+#spotlight section.wrapper div.container div.right div.play-logo {
+  background-color: #f57a4d;
+  padding: 40px;
+  border-radius: 50%;
+  position: absolute;
+  right: 42%;
+  bottom: 90%;
+}
+#spotlight section.wrapper div.container div.right div.play-logo img {
+  width: 100%;
+  display: block;
+}
+#spotlight section.wrapper span{
+  display: block;
+  text-align: center;
+  margin: 50px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+#spotlight section.wrapper div.spotlight-bottom{
+  
+}
+#spotlight section.wrapper div.spotlight-bottom ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#spotlight section.wrapper div.spotlight-bottom ul li{
+  
+}
+#spotlight section.wrapper div.spotlight-bottom ul li a{
+  display: inline-block;
+}
+#spotlight section.wrapper div.spotlight-bottom ul li a img{
+  width: 100%;
+  display: block;
+}
+#service{
+
+}
+#service section.wrapper{
+  
+}
+#service section.wrapper div.item{
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+}
+#service section.wrapper div.item  div.left{
+  margin-right: 20%;
+}
+#service section.wrapper div.item  div.left img{
+  width: 100%;
+  display: block;
+}
+#service section.wrapper div.item  div.right{
+  width: 40%;
+}
+#service section.wrapper div.item  div.right a{
+  display: inline-block;
+  margin-bottom: 20px;
+  background: #46d278 ;
+  border-radius: 30%;
+  padding: 20px 20px;
+}
+#service section.wrapper div.item  div.right a img {
+  width: 100%;
+  display: block;
+}
+#service section.wrapper div.item  div.right h2{
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+#service section.wrapper div.item  div.right p{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#service section.wrapper div.item  div.right a.button {
+  display: inline-block;
+  background: #2756fb;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+}
+#service section.wrapper div.item  div.right hr{
+  border: 1px dashed #9b9b9b;
+  width: 50%;
+  margin: 20px 0;
+}
+#service section.wrapper div.item  div.right p.italic {
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 17px;
+  color: #818181;
+}
+#service section.wrapper div.item  div.right p.bold{
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #818181;
+}
+#service section.wrapper div.item  div.right p.bold span {
+  font-weight: bold;
+  display: inline-block;
+}
+#service section.wrapper div.item  div.right small{
+  display: inline-block;
+}
+#service section.wrapper div.item  div.right small img{
+  width: 100%;
+  display: block;
+}
+#service div.item-bg {
+  background: #f8f8f8;
+  padding: 70px 0;
+}
+#service div.item-bg section.wrapper{
+  display: flex;
+  align-items: center;
+}
+#service div.item-bg section.wrapper div.left{
+  margin-right: 12%;
+}
+#service div.item-bg section.wrapper div.left img{
+  width: 100%;
+  display: block;
+}
+#service div.item-bg section.wrapper div.right{
+  width: 40%;
+}
+#service div.item-bg section.wrapper div.right a{
+  display: inline-block;
+  margin-bottom: 20px;
+  background: #f9c837;
+  border-radius: 40%;
+  padding: 15px 15px;
+}
+#service div.item-bg section.wrapper div.right a img {
+  width: 100%;
+  display: block;
+}
+#service div.item-bg section.wrapper div.right h2{
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+#service div.item-bg section.wrapper div.right p{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#service div.item-bg section.wrapper div.right a.button {
+  display: inline-block;
+  background: #2756fb;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+}
+#service div.item-bg section.wrapper div.right hr{
+  border: 1px dashed #9b9b9b;
+  width: 50%;
+  margin: 20px 0;
+}
+#service div.item-bg section.wrapper div.right p.italic {
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 17px;
+  color: #818181;
+}
+#service div.item-bg section.wrapper div.right p.bold{
+  margin-bottom: 10px;
+  color: #818181;
+  font-size: 18px;
+}
+#service  div.item-bg section.wrapper div.right p.bold span {
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+#service div.item-bg section.wrapper div.right small{
+  display: inline-block;
+}
+#service div.item-bg section.wrapper div.right small img{
+  display: block;
+  width: 100%;
+}
+#service section.wrapper div.item div.left{
+  margin-right: 20%;
+}
+#service section.wrapper div.item div.left img{
+  width: 100%;
+  display: block;
+}
+#service section.wrapper div.item div.right{
+  width: 40%;
+}
+#service section.wrapper div.item div.right a{
+  display: inline-block;
+  margin-bottom: 20px;
+  background: #f5794c;
+  border-radius: 40%;
+  padding: 15px 15px;
+}
+#service section.wrapper div.item div.right a.green {
+  display: inline-block;
+  margin-bottom: 20px;
+  background: #46d278;
+  border-radius: 40%;
+  padding: 15px 15px;
+}
+#service section.wrapper div.item div.right a img {
+  width: 100%;
+  display: block;
+}
+#service section.wrapper div.item div.right h2{
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+#service section.wrapper div.item div.right p{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#service section.wrapper div.item div.right a.button {
+  display: inline-block;
+  background: #2756fb;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+}
+#service section.wrapper div.item div.right hr{
+  border: 1px dashed #9b9b9b;
+  width: 50%;
+  margin: 20px 0;
+}
+#service section.wrapper div.item div.right p.italic {
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 17px;
+  color: #818181;
+}
+#service section.wrapper div.item div.right p.bold{
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #818181;
+}
+#service section.wrapper div.item div.right p.bold span {
+  font-weight: bold;
+  display: inline-block;
+}
+#service section.wrapper div.item div.right small{
+  display: inline-block;
+}
+#service section.wrapper div.item div.right small img{
+  width: 100%;
+  display: block;
+}
+#feature{
+  padding: 80px 0;
+} 
+#feature section.wrapper{
+
+}
+#feature section.wrapper h3{
+  font-size: 47px;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+#feature section.wrapper div.top {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15%;
+}
+#feature section.wrapper div.top div.image-brand{
+  position: relative;
+  width: 32%;
+  margin: 0 auto;
+}
+#feature section.wrapper div.top div.image-brand div.main-img{
+  margin-bottom: 30px;
+}
+#feature section.wrapper div.top div.image-brand div.main-img img{
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  filter: invert(0);
+}
+#feature section.wrapper div.top div.image-brand div.image-inn-nbc{
+  position: absolute;
+  width: 25%;
+  left: 4%;
+  top: 60%;
+  background: #fff;
+  padding: 5px 32px;
+  border-radius: 5px;
+}
+#feature section.wrapper div.top div.image-brand div.image-inn-hubspot{
+  position: absolute;
+  width: 30%;
+  left: 4%;
+  top: 60%;
+  background: #fff;
+  padding: 2px 10px;
+  border-radius: 5px;
+}
+#feature section.wrapper div.top div.image-brand div.image-inn-housingwi{
+  position: absolute;
+  width: 25%;
+  left: 4%;
+  top: 60%;
+  background: #fff;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+#feature section.wrapper div.top div.image-brand div.image-inn img{
+  width: 100%;
+  display: block;
+}
+#feature section.wrapper div.top div.image-brand div.play-button {
+  position: absolute;
+  left: 80%;
+  top: 3%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 50%;
+}
+#feature section.wrapper div.top div.image-brand div.play-button img {
+  width: 100%;
+  display: block;
+  filter: invert(1);
+}
+#feature section.wrapper div.top p {
+  font-size: 18px;
+  font-weight: 500;
+}
+#feature section.wrapper div.bottom{
+  display: flex;
+  flex-wrap: wrap;
+}
+#feature section.wrapper div.bottom div.container{
+  width: 45%;
+  margin: 0 auto;
+  position: relative;
+}
+#feature section.wrapper div.bottom div.container div.image{
+  margin-bottom: 20px;
+}
+#feature section.wrapper div.bottom div.container div.image img{
+  width: 100%;
+  display: block;
+  border-radius: 10px;            
+}
+#feature section.wrapper div.bottom div.container div.image-bet{
+  position: absolute;
+  padding: 10px 10px;
+  background: #fff;
+  left: 3%;
+  top: 62%;
+  border-radius: 5px;
+  width: 20%;
+}
+#feature section.wrapper div.bottom div.container div.image-bet img{
+  width: 100%;
+  display: block;
+}
+#feature section.wrapper div.bottom div.container div.image-hogan {
+  position: absolute;
+  background: #fff;
+  width: 18%;
+  padding: 10px 20px;
+  left: 3%;
+  top: 60%;
+  border-radius: 5px;
+}
+#feature section.wrapper div.bottom div.container div.image-hogan img {
+  width: 100%;
+  display: block;
+}
+#feature section.wrapper div.bottom div.container p{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#feature section.wrapper div.bottom div.container span{
+  display: block;
+  font-weight: 600;
+  font-size: 15px;
+}
+#feature section.wrapper div.bottom div.container small{
+  display: block;
+  margin: 10px 0;
+}
+#highlight{
+  background: #f8f8f8;
+  padding: 50px 0   ;
+}
+#highlight section.wrapper{
+
+}
+#highlight section.wrapper h4{
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#highlight section.wrapper ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+#highlight section.wrapper ul li {
+  width: 33.3%;
+  padding: 50px 80px;
+  text-align: center;
+  margin: 0 auto;
+}
+#highlight section.wrapper ul li:nth-child(2) {
+  border-right: 1px dashed;
+  border-left: 1px dashed;
+}
+#highlight section.wrapper ul li:nth-child(5) {
+  border-right: 1px dashed;
+  border-left: 1px dashed;
+}
+#highlight section.wrapper ul li img{
+  width: 100%;
+  display: block;
+}
+#highlight section.wrapper ul li h3{
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+#highlight section.wrapper ul li p {
+  font-size: 18px;
+}
+#highlight div.content  {
+  background: #d0dfff;
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+#highlight div.content div.image-star {
+  position: absolute;
+  left: 10%;
+  bottom: 80%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 40%;
+}
+#highlight div.content div.image-star img {
+  width: 100%;
+  display: block;
+}
+#highlight div.content div.bap {
+  display: flex;
+  align-items: center;
+  padding: 40px 45px;
+  justify-content: space-around;
+}
+#highlight div.content div.bap p {
+  font-size: 17px;
+  width: 60%;
+}
+#highlight div.content div.bap a.button {
+  background: #2756fb;
+  border-radius: 5px;
+  width: 25%;
+  padding: 15px 15px;
+  color: #fff;
+  font-weight: 600;
+}
+#solutions{
+  padding: 80px 0;
+}
+#solutions section.wrapper{
+
+}
+#solutions section.wrapper h5{
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#solutions section.wrapper ul {
+  display: flex;
+  min-height: 70vh;
+  margin-bottom: 5%;
+}
+#solutions section.wrapper ul li.left {
+  width: 33.3%;
+  text-align: center;
+  background: #d0dfff;
+  padding: 40px;
+  border-radius: 10px;
+  margin-right: 50px;
+  position: relative;
+}
+#solutions section.wrapper ul li.left div.small{
+  display: inline-block;
+  margin-bottom: 30px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 20px;
+  width: 25%;
+}
+#solutions section.wrapper ul li.left div.small img{
+  width: 100%;
+  display: block;
+}
+#solutions section.wrapper ul li.left h3{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#solutions section.wrapper ul li.left p{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#solutions section.wrapper ul li.left a.button {
+  display: inline-block;
+  margin-bottom: 20px;
+  background: #2756fb;
+  font-weight: 600;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+#solutions section.wrapper ul li.left div.item{
+  position: absolute;
+  top: 60%;
+  left: 1%;
+}
+#solutions section.wrapper ul li.left div.item img{
+  width: 100%;
+  display: block;
+}
+#solutions section.wrapper ul li.middle {
+  width: 33.3%;
+  text-align: center;
+  background: #fef4d7;
+  padding: 40px;
+  border-radius: 10px;
+  margin-right: 50px;
+  position: relative;
+}
+#solutions section.wrapper ul li.middle div.small{
+  display: inline-block;
+  margin-bottom: 30px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 20px;
+  width: 25%;
+}
+#solutions section.wrapper ul li.middle div.small img{
+  width: 100%;
+  display: block;
+}
+#solutions section.wrapper ul li.middle h3{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#solutions section.wrapper ul li.middle p{
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+#solutions section.wrapper ul li.middle a.button {
+  display: inline-block;
+  margin-bottom: 20px;
+  background: #f9c837;
+  font-weight: 600;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+#solutions section.wrapper ul li.middle div.item{
+  position: absolute;
+  top: 60%;
+  left: 1%;
+}
+#solutions section.wrapper ul li.middle div.item img{
+  width: 100%;
+  display: block;
+}
+#solutions section.wrapper ul li.right {
+  width: 33.3%;
+  text-align: center;
+  background: #fce4da;
+  padding: 40px;
+  border-radius: 10px;
+  position: relative;
+}
+#solutions section.wrapper ul li.right div.small{
+  display: inline-block;
+  margin-bottom: 30px;
+  background: #fff;
+  padding: 15px 10px;
+  border-radius: 20px;
+  width: 23%;
+}
+#solutions section.wrapper ul li.right div.small img{
+  width: 100%;
+  display: block;
+}
+#solutions section.wrapper ul li.right h3{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#solutions section.wrapper ul li.right p{
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+#solutions section.wrapper ul li.right a.button {
+  display: inline-block;
+  margin-bottom: 20px;
+  background: #f5794c;
+  font-weight: 600;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+#solutions section.wrapper ul li.right div.item{
+  position: absolute;
+  top: 60%; 
+  left: 0%;
+}
+#solutions section.wrapper ul li.right div.item img{
+  width: 100%;
+  display: block;
+}
+#resourses {
+  padding: 70px 0;
+}
+#resourses section.wrapper{
+
+}
+#resourses section.wrapper h5{
+  margin-bottom: 30px;
+  font-size: 40px;  
+  font-weight: 600;
+  width: 40%;
+}
+#resourses section.wrapper ul {
+  display: flex;
+  margin-bottom: 50px;
+}
+#resourses section.wrapper ul li.left{
+  width: 33%;
+  margin-right: 40px;
+}
+#resourses section.wrapper ul li.left div.image{
+  margin-bottom: 30px;
+}
+#resourses section.wrapper ul li.left div.image img{
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+#resourses section.wrapper ul li.left span{
+  display: inline-block;
+  margin-bottom: 20px;
+}
+#resourses section.wrapper ul li.left p{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+#resourses section.wrapper ul li.left a{
+  display: inline-block;
+}
+#resourses section.wrapper ul li.left a:hover {
+  text-decoration: underline;
+}
+#resourses section.wrapper ul li.middle{
+  width: 33%;
+  margin-right: 40px;
+}
+#resourses section.wrapper ul li.middle div.image{
+  margin-bottom: 20px;
+}
+#resourses section.wrapper ul li.middle div.image img{
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+#resourses section.wrapper ul li.middle span{
+  display: inline-block;
+  margin-bottom: 20px;
+}
+#resourses section.wrapper ul li.middle p{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+#resourses section.wrapper ul li.middle a{
+  display: inline-block;
+}
+#resourses section.wrapper ul li.middle a:hover {
+  text-decoration: underline;
+}
+#resourses section.wrapper ul li.right{
+  width: 33%;
+}
+#resourses section.wrapper ul li.right div.image {
+  margin-bottom: 30px;
+}
+#resourses section.wrapper ul li.right div.image img{
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+#resourses section.wrapper ul li.right span{
+  display: inline-block;
+  margin-bottom: 20px;
+}
+#resourses section.wrapper ul li.right p{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+#resourses section.wrapper ul li.right a{
+  display: inline-block;
+}
+#resourses section.wrapper ul li.right a:hover {
+  text-decoration: underline;
+}
+#resourses section.wrapper a.button{
+  display: block;
+  background: #2756fb;
+  text-align: center;
+  padding: 20px 20px;
+  width: 20%;
+  margin: 0 auto;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+}
+#help {
+  background: #000;
+  padding: 80px 0;
+}
+#help section.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#help section.wrapper div.left{
+  color: #fff;
+  width: 40%;
+}
+#help section.wrapper div.left h3{
+  font-size: 40px;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+#help section.wrapper div.left p{
+  font-size: 18px;
+  color: #c4c4c4;
+  margin-bottom: 30px;
+}
+#help section.wrapper div.left hr{
+  border: 1px dashed;
+  width: 20%;
+  margin-bottom: 20px;
+}
+#help section.wrapper div.left h4{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+#help section.wrapper div.left p.italics{
+  font-style: italic;
+}
+#help section.wrapper div.left span{
+  display: inline-block;
+  font-weight: 600;
+}
+#help section.wrapper div.left small{
+  display: block;
+  margin-bottom: 20px;
+}
+#help section.wrapper div.left div.round-image{
+
+}
+#help section.wrapper div.left div.round-image ul {
+  display: flex;
+  margin-bottom: 30px;
+
+}
+#help section.wrapper div.left div.round-image ul li{
+  margin-right: 20px;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+#help section.wrapper div.left div.round-image ul li:hover{
+  border: 3px solid #f57447;
+}
+#help section.wrapper div.left div.round-image ul li img{
+  width: 100%;
+  display: block;
+  border-radius: 50%;
+}
+#help section.wrapper div.left ul.logo{
+  display: flex;
+  align-items: center;
+} 
+#help section.wrapper div.left ul.logo li {
+
+}
+#help section.wrapper div.left ul.logo li{
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+#help section.wrapper div.left ul.logo li img{
+  width: 100%;
+  display: block;
+}
+#help section.wrapper div.right{
+  width: 45%;
+  padding: 40px;
+  background: #fff;
+  border-radius: 10px;
+  height: fit-content;
+}
+#help section.wrapper div.right h3{
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#help section.wrapper div.right ul{
+  margin-bottom: 20px;
+}
+#help section.wrapper div.right ul li.input{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#help section.wrapper div.right ul li.input input{
+  border: 1px solid #c4c4c4;
+  color: #818181;
+  font-size: 17px;
+  padding: 15px 20px;
+  width: 48%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+#help section.wrapper div.right ul li.select {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#help section.wrapper div.right ul li.select select{
+  border: 1px solid #c4c4c4;
+  font-size: 17px;
+  color: #818181;
+  padding: 15px 20px;
+  width: 48%; 
+  margin-bottom: 10px;
+}
+#help section.wrapper div.right ul li select option {
+
+}
+#help section.wrapper div.right div.checkbox {
+  display: flex;
+  margin-bottom: 20px;
+}
+#help section.wrapper div.right div.checkbox input[type=checkbox]{
+  width: 40px;
+  height: 30px;
+  margin-right: 20px;
+}
+#help section.wrapper div.right div.checkbox p{
+  color: #818181;
+  font-size: 15px;
+}
+#help section.wrapper div.right a.button{
+  display: block;
+  background: #2756fb;
+  font-weight: 600;
+  padding: 20px 20px;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  }
+footer{
+  padding: 80px 0;
+}
+footer section.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer section.wrapper div.left{
+  width: 40%;
+}
+footer section.wrapper div.left h6{
+  font-size: 25px;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+footer section.wrapper div.left ul.icon{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+footer section.wrapper div.left ul.icon li{
+  filter: grayscale(100%);
+  opacity: 0.5;
+  padding: 10px 10px;
+  background: #c4c4c4;
+  border-radius: 5px;
+  margin: 0px 20px 20px 0px;
+}
+footer section.wrapper div.left ul.icon li:last-child{
+  margin-right: 0;
+}
+footer section.wrapper div.left ul.icon li img {
+  width: 100%;
+  display: block;
+}
+footer section.wrapper div.left div.language{
+  display: flex;
+}
+footer section.wrapper div.left div.language div.globe{
+  margin: 0px 10px 10px 0px;
+} 
+footer section.wrapper div.left div.language div.globe img{
+  width: 100%;
+  display: block;
+}
+footer section.wrapper div.left div.language span{
+  display: block;
+  font-weight: 500;
+}
+footer section.wrapper div.left small {
+  display: block;
+  font-size: 17px;
+  margin-left: 30px;
+}
+footer section.wrapper div.right{
+
+} 
+footer section.wrapper div.right ul{
+  display: flex;
+}
+footer section.wrapper div.right ul li{
+  margin-right: 40px;
+}
+footer section.wrapper div.right ul li:last-child {
+  margin-right: 0;
+}
+footer section.wrapper div.right ul li h3{
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+footer section.wrapper div.right ul li span{
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+footer section.wrapper div.right ul li div.end {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer section.wrapper div.right ul li div.end div.logo {
+  margin-bottom: 10px;
+  width: 25%;
+}
+footer section.wrapper div.right ul li div.end div.logo img {
+  width: 100%;
+  display: block;
+}
+footer section.wrapper div.right ul li div.end span {
+  font-weight: 500;
+} 
+@media all and (max-width:1280px) {
+  header{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  header h1 {
+    width: auto;
+  }
+  header nav.middle {
+    width: 50%;
+    margin: 0 70px;
+  }
+  header nav.middle ul {
+    display: flex;
+    align-items: center;
+  }
+  header nav.middle ul li {
+    margin-right: 10px;
+  }
+  header nav.middle ul li a {
+    font-size: 16px;
+  }
+  header nav.right {
+    width: auto;
+    display: flex;
+    align-items: center;
+  }
+  header nav.right a {
+    font-size: 13px;
+    margin-right: 10px;
+  }
+  header nav.right a.button {
+    margin-right: 0;
+  }
+  #spotlight section.wrapper div.container div.left h2 {
+    font-size: 45px;
+  }
+  #spotlight section.wrapper div.container div.left p {
+    font-size: 18px;
+  }
+  #spotlight section.wrapper div.container div.left div.form {
+    margin-bottom: 30px;
+  }
+  #spotlight section.wrapper div.container div.left div.form input {
+    padding: 20px 50px 20px 20px;
+  }
+  #spotlight section.wrapper div.container div.left div.form a {
+    right: 50px;
+  }
+  #spotlight section.wrapper div.container div.right div.play-logo {
+    right: 40%;
+  }
+  #service section.wrapper div.item {
+    padding: 100px 0;
+  }
+  #service section.wrapper div.item div.left {
+    margin-right: 15%;
+  }
+  #service section.wrapper div.item div.right {
+    width: 50%;
+  }
+  #service section.wrapper div.item div.right a {
+    padding: 10px 10px;
+  }
+  #service section.wrapper div.item div.right h2  {
+    font-size: 35px;
+  }
+  #service section.wrapper div.item div.right p {
+    font-size: 16px;
+  }
+  #service section.wrapper div.item div.right a.button {
+    font-size: 13px;
+  }
+  #service section.wrapper div.item div.right p.italic {
+    font-size: 16px;
+  }
+  #service section.wrapper div.item div.right p.bold {
+    font-size: 16px;
+  }
+  #service div.item-bg section.wrapper div.left {
+    margin-right: 15%;
+  }
+  #service div.item-bg section.wrapper div.right {
+    width: 50%;
+  }
+  #service div.item-bg section.wrapper div.right a {
+    padding: 10px 10px;
+  }
+  #service div.item-bg section.wrapper div.right h2  {
+    font-size: 35px;
+  }
+  #service div.item-bg section.wrapper div.right p {
+    font-size: 16px;
+  }
+  #service div.item-bg section.wrapper div.right a.button {
+    font-size: 13px;
+  }
+  #service div.item-bg section.wrapper div.right p.italic {
+    font-size: 16px;
+  }
+  #service div.item-bg section.wrapper div.right p.bold {
+    font-size: 16px;
+  }
+  #feature section.wrapper h3 {
+    font-size: 37px;
+  }
+  #feature section.wrapper div.top div.image-brand div.image-inn-nbc {
+    width: 30%;
+    padding: 2px 30px;
+    top: 60%;
+  }
+  #feature section.wrapper div.top div.image-brand div.image-inn-hubspot {
+    top: 60%;
+  }
+  #feature section.wrapper div.top div.image-brand div.image-inn-housingwi {
+    top: 60%;
+    padding: 8px 5px;
+    width: 30%;
+  }
+  #feature section.wrapper div.top div.image-brand div.main-img {
+    margin-bottom: 20px;
+  }
+  #feature section.wrapper div.top div.image-brand p {
+    font-size: 16px;
+  }
+  #feature section.wrapper div.bottom div.container {
+    width: 43%;
+  }
+  #feature section.wrapper div.bottom div.container div.image-hogan  {
+    width: 20%;
+    padding: 5px 20px;
+  }
+  #feature section.wrapper div.bottom div.container p {
+    font-size: 16px;
+  }
+  #feature section.wrapper div.bottom div.container div.image-bet {
+    width: 18%;
+    top: 60%;
+  }
+  #highlight {
+    padding: 80px 0;
+  }
+  #highlight section.wrapper h4{
+    margin-bottom: 50px;
+  }
+  #highlight section.wrapper ul li {
+    padding: 50px 50px;
+  }
+  #highlight section.wrapper ul li h3 {
+    font-size: 27px;
+  }
+  #highlight section.wrapper ul li p {
+    font-size: 16px;
+  }
+  #highlight div.content div.bap {
+    padding: 30px 20px;
+  }
+  #highlight div.content div.bap p {
+    width: 70%;
+  }
+  #highlight div.content div.bap a.button {
+    width: 25%;
+    padding: 10px 10px;
+  }
+  #solutions section.wrapper ul {
+    min-height: 65vh;
+  }
+  #solutions section.wrapper ul li.left {
+    padding: 30px;
+  }
+  #solutions section.wrapper ul li.left p {
+    font-size: 16px;
+  }
+  #solutions section.wrapper ul li.left div.item {
+    top: 63%;
+  }
+  #solutions section.wrapper ul li.middle {
+    padding: 30px;
+  }
+  #solutions section.wrapper ul li.middle p {
+    font-size: 16px;
+  }
+  #solutions section.wrapper ul li.middle div.item {
+    top: 63%;
+  }
+  #solutions section.wrapper ul li.right {
+    padding: 30px;
+  }
+  #solutions section.wrapper ul li.right p {
+    font-size: 16px;
+  }
+  #solutions section.wrapper ul li.right div.item {
+    top: 63%;
+  }
+  #resourses section.wrapper h5 {
+    width: 60%;
+  }
+  #resourses section.wrapper ul li.left span {
+    font-size: 16px;
+  }
+  #resourses section.wrapper ul li.left p {
+    font-size: 16px;
+  }
+  #resourses section.wrapper ul li.middle p {
+    font-size: 16px;
+  }
+  #resourses section.wrapper ul li.right p{
+    font-size: 16px;
+  }
+  #resourses section.wrapper a.button {
+    width: 25%;
+  }
+  #help section.wrapper div.left h3 {
+    font-size: 35px;
+  }
+  #help section.wrapper div.left p {
+    font-size: 16px;
+  }
+  #help section.wrapper div.left h4 {
+    font-size: 18px;
+  }
+  #help section.wrapper div.left hr {
+    width: 30%;
+  }
+  #help section.wrapper div.left p.italics {
+    font-size: 16px;
+  }
+  #help section.wrapper div.right {
+    width: 55%;
+    padding: 20px 20px;
+  }
+}
+@media all and (max-width:1080px) {
+  header nav.middle ul li a {
+    font-size: 14px;
+  }
+  #spotlight section.wrapper div.container div.left h2 {
+    font-size: 37px;
+  }
+  #spotlight section.wrapper div.container div.left p {
+    font-size: 16px;
+  }
+  #spotlight section.wrapper div.container div.left div.form a {
+    right: 20px;
+  }
+  #service section.wrapper div.item div.right h2 {
+    font-size: 32px;
+  }
+  #service div.item-bg section.wrapper div.right h2 {
+    font-size: 32px;
+  }
+  #feature section.wrapper div.top div.image-brand div.image-inn-nbc {
+    top: 55%;
+    padding: 2px 25px;
+  }
+  #feature section.wrapper div.top div.image-brand div.image-inn-hubspot {
+    top: 58%;
+  }
+  #feature section.wrapper div.top div.image-brand div.image-inn-housingwi {
+    top: 57%;
+    width: 33%;
+  }
+  #feature section.wrapper div.bottom div.container div.image-bet {
+    top: 54%;
+  }
+  #feature section.wrapper div.bottom div.container div.image-hogan {
+    top: 55%;
+    padding: 2px 15px;
+  }
+  #highlight div.content div.bap {
+    padding: 20px 10px;
+  }
+  #highlight div.content div.bap a.button {
+    width: 26%;
+  }
+  #solutions section.wrapper ul {
+    height: 67vh;
+  }
+  #solutions section.wrapper ul li.middle p {
+    margin-bottom: 10px;
+  }
+  #resourses section.wrapper h5 {
+    width: 50%;
+  }
+  footer section.wrapper div.left {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  footer section.wrapper div.right ul li {
+    margin-right: 100px;
+  }
+}
+@media all and (max-width:980px) {
+  header {
+    justify-content: space-between;
+  }
+  header nav.middle {
+    display: none;
+  }
+  #spotlight {
+    padding: 0;
+  }
+  #spotlight section.wrapper div.container {
+    align-items: center;
+  }
+  #spotlight section.wrapper div.container div.left {
+    width: 90%;
+  }
+  #spotlight section.wrapper div.container div.left h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  #spotlight section.wrapper div.container div.left p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  #spotlight section.wrapper div.container div.left div.form input{
+    padding: 10px 0px 10px 10px;
+  }
+  #spotlight section.wrapper div.container div.left div.form a {
+    padding: 10px 10px;
+    right: 150px;
+  }
+  #spotlight section.wrapper div.container div.right div.play-logo {
+    padding: 35px;
+    bottom: 92%;
+    right: 35%;
+  }
+  #spotlight section.wrapper div.spotlight-bottom ul li {
+    margin-right: 20px;
+  }
+  #spotlight section.wrapper div.spotlight-bottom ul li:last-child {
+    margin-right: 0;
+  }
+  #service section.wrapper div.item div.left {
+    margin-right: 10%;
+  }
+  #service section.wrapper div.item div.right {
+    width: 70%;
+  }
+  #service section.wrapper div.item div.right h2{
+    font-size: 27px;
+  }
+  #service div.item-bg section.wrapper div.left {
+    margin-right: 10%;
+  }
+  #service div.item-bg section.wrapper div.right {
+    width: 70%;
+  }
+  #service div.item-bg section.wrapper div.right h2{
+    font-size: 27px;
+  }
+  #feature {
+    padding: 30px 0;
+  }
+  #feature section.wrapper div.top div.image-brand div.image-inn-nbc {
+    top: 53%;
+    padding: 2px 22px;
+  }
+  #feature section.wrapper div.top div.image-brand div.image-inn-hubspot {
+    top: 56%;
+  }
+  #feature section.wrapper div.top div.image-brand div.image-inn-housingwi {
+    width: 43%;
+    top: 56%;
+    padding: 5px 5px;
+  }
+  #feature section.wrapper div.top div.image-brand div.play-button {
+    left: 80%;
+    padding: 15px;
+  }
+  #feature section.wrapper div.bottom div.container div.image-hogan {
+    top: 50%;
+    padding: 5px 8px;
+  }
+  #feature section.wrapper div.bottom div.container div.image-bet {
+    top: 52%;
+    width: 20%;
+  }
+  #highlight div.content {
+    width: 70%;
+  }
+  #highlight div.content div.bap a.button {
+    width: 20%;
+  }
+  #solutions section.wrapper h5 {
+    font-size: 37px;
+  }
+  #solutions section.wrapper ul li.left div.small {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  #solutions section.wrapper ul {
+    height: 50vh;
+  }
+  #solutions section.wrapper ul li.left p {
+    font-size: 14px;
+  }
+  #solutions section.wrapper ul li.middle div.small {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  #solutions section.wrapper ul li.middle p {
+    font-size: 14px;
+  }
+  #solutions section.wrapper ul li.right div.small {
+    width: 28%;
+    margin: 20px;
+  }
+  #solutions section.wrapper ul li.right p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  #solutions section.wrapper ul li.right {
+    padding: 10px;
+    min-height: 46vh;
+  }
+  #solutions section.wrapper ul li.left div.item {
+    top: 64%;
+  }
+  #solutions section.wrapper ul li.middle div.item {
+    top: 64%;
+  }
+  #solutions section.wrapper ul li.right div.item {
+    top: 64%;
+  }
+  #resourses {
+    padding: 70px 0;
+  }
+  #resourses section.wrapper h5 {
+    font-size: 33px;
+  }
+  #resourses section.wrapper a.button {
+    width: 30%;
+  }
+  #help section.wrapper {
+    flex-wrap: wrap;
+  }
+  #help section.wrapper div.left {
+    width: 100%;
+  }
+  #help section.wrapper div.right {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 50px;
+  }
+  #help section.wrapper div.right div.checkbox input[type=checkbox] {
+    width: 40px;
+    height: 20px;
+  }
+  footer section.wrapper div.left {
+    margin-bottom: 20px;
+    width: 70%;
+  }
+  footer section.wrapper div.left small {
+    font-size: 16px;
+    margin-left: 30px;
+  }
+  footer section.wrapper div.right ul li {
+    margin-right: 90px;
+  }
+}
+@media all and (max-width:768px) {
+  #spotlight section.wrapper div.container div.left {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 20px;  
+  }
+  #spotlight section.wrapper div.container div.left h2 {
+    font-size: 40px;
+  }
+  #spotlight section.wrapper div.container div.left div.form input {
+    padding: 10px 90px 10px 10px;
+  }
+  #spotlight section.wrapper div.container div.left div.form a {
+    right: 130px;
+  }
+  #spotlight section.wrapper div.container div.right {
+    display: none; 
+  }
+  #spotlight section.wrapper span {
+    margin: 20px 0;
+  }
+  #service section.wrapper div.item {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 70px 0;
+  }
+  #service section.wrapper div.item div.left {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #service section.wrapper div.item div.right {
+    width: 100%;
+  }
+  #service div.item-bg section.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+  #service div.item-bg section.wrapper div.left {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #service div.item-bg section.wrapper div.right{
+    width: 100%;
+  }
+  #service div.item-bg section.wrapper div.right a.button {
+    font-size: 16px;
+  }
+  #service section.wrapper div.item div.right a.button {
+    font-size: 16px;
+  }
+  #feature {
+    padding: 20px 0;
+  }
+  #feature section.wrapper div.top div.image-brand {
+    width: 70%;
+  }
+  #feature section.wrapper div.top div.image-brand p {
+    margin-bottom: 10px;
+  }
+  #feature section.wrapper div.bottom div.container {
+    width: 70%;
+    margin-bottom: 10px;
+  }
+  #highlight section.wrapper ul li {
+    width: 50%;
+    padding: 30px 30px;
+  }
+  #highlight section.wrapper ul li:nth-child(2) {
+    border-right: 0;
+    border-left: 0;
+  }
+  #highlight section.wrapper ul li:nth-child(5) {
+    border-right: 0;
+    border-left: 0;
+  }
+  #highlight div.content {
+    width: 80%;
+  }
+  #highlight div.content div.bap a.button {
+    width: 22%;
+  }
+  #highlight div.content div.image-star {
+    padding: 15px;
+  }
+  #solutions {
+    padding: 30px 0;
+  }
+  #solutions section.wrapper ul {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  #solutions section.wrapper ul li.left {
+    width: 80%;
+    margin: 0 auto;
+    height: 60vh;
+    margin-bottom: 20%;
+  }
+  #solutions section.wrapper ul li.left div.small {
+    width: fit-content;
+  }
+  #solutions section.wrapper ul li.left p {
+    font-size: 16px;
+  }
+  #solutions section.wrapper ul li.left div.item {
+    top: 60%;
+    left: 18%;
+  }
+  #solutions section.wrapper ul li.middle {
+    width: 80%;
+    margin: 0 auto;
+    height: 60vh;
+    margin-bottom: 25%;
+  }
+  #solutions section.wrapper ul li.middle div.small {
+    width: fit-content;
+  }
+  #solutions section.wrapper ul li.middle p {
+    font-size: 16px;
+  }
+  #solutions section.wrapper ul li.middle div.item {
+    top: 60%;
+    left: 18%;
+  }
+  #solutions section.wrapper ul li.right {
+      width: 80%;
+      margin: 0 auto;
+      height: 60vh;
+  }
+  #solutions section.wrapper ul li.right div.small {
+    width: fit-content;
+  }
+  #solutions section.wrapper ul li.right p {
+    font-size: 16px;
+  }
+  #solutions section.wrapper ul li.right div.item {
+    top: 60%;
+    left: 15%;
+  }
+  #resourses section.wrapper ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #resourses section.wrapper h5 {
+    width: 80%;
+    font-size: 37px;
+  }
+  #resourses section.wrapper ul li.left {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  #resourses section.wrapper ul li.left div.image {
+    width: 80%;
+  }
+  #resourses section.wrapper ul li.middle {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  #resourses section.wrapper ul li.middle div.image {
+    width: 80%;
+  }
+  #resourses section.wrapper ul li.right {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #resourses section.wrapper ul li.right div.image {
+    width: 80%;
+  }
+  #resourses section.wrapper a.button {
+    width: 40%;
+  }
+  footer section.wrapper div.left {
+    width: 80%;
+  }
+  footer section.wrapper div.left small {
+    margin-left: 30px;
+  }
+  footer section.wrapper div.right ul li {
+    margin-right: 80px;
+  }
+  footer section.wrapper div.right ul li h3 {
+    font-size: 18px;
+  }
+  footer section.wrapper div.right ul li span {
+    font-size: 16px;
+  }
+}
+@media all and (max-width:640px) {
+  #spotlight section.wrapper div.container div.left h2 {
+    font-size: 37px;
+  }
+  #spotlight section.wrapper div.container div.left div.form input {
+    padding: 10px 100px 10px 10px;
+  }
+  #spotlight section.wrapper div.container div.left div.form a {
+    right: 80px;
+  }
+  #spotlight section.wrapper span {
+    font-size: 16px;
+  }
+  #spotlight section.wrapper div.spotlight-bottom ul li {
+    margin: 10px;
+  }
+  #feature section.wrapper div.top div.image-brand div.image-inn-nbc {
+    width: 22%;
+    top: 66%;
+    padding: 2px 30px;
+  }
+  #feature section.wrapper div.top div.image-brand div.image-inn-hubspot {
+    top: 65%;
+  }
+  #feature section.wrapper div.top div.image-brand div.image-inn-housingwi {
+    width: 25%;
+    top: 68%;
+  }
+  #feature section.wrapper div.bottom div.container div.image-hogan {
+    top: 53%;
+  }
+  #feature section.wrapper div.bottom div.container div.image-bet {
+    top: 56%;
+  }
+  #highlight div.content {
+    width: 100%;
+  }
+  #highlight div.content div.bap a.button {
+    width: 27%;
+    padding: 10px 30px
+  }
+  #solutions section.wrapper ul li.left {
+    margin-bottom: 30%;
+  }
+  #solutions section.wrapper ul li.left div.item {
+    top: 60%;
+    left: 50px;
+  }
+  #solutions section.wrapper ul li.middle {
+    margin-bottom: 35%;
+  }
+  #solutions section.wrapper ul li.middle div.item {
+    top: 60%;
+    left: 50px;
+  }
+  #solutions section.wrapper ul li.right {
+    margin-bottom: 10%;
+  }
+  #solutions section.wrapper ul li.right div.item {
+    top: 60%;
+    left: 40px;
+  }
+  #resourses section.wrapper h5 {
+    font-size: 37px;
+  }
+  #resourses section.wrapper a.button {
+    width: 50%;
+  }
+  #help section.wrapper div.right {
+    padding: 40px 20px;
+  }
+  #help section.wrapper div.right div.checkbox input[type=checkbox] {
+    width: 30px;
+  }
+  footer section.wrapper div.right ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer section.wrapper div.right ul li {
+    margin: 20px;
+    width: 35%;
+  }
+  footer section.wrapper div.right ul li div.end {
+    justify-content: normal;
+  }
+  footer section.wrapper div.right ul li div.end div.logo {
+    margin: 10px;
+  }
+}
+@media all and (max-width:480px) {
+  #spotlight section.wrapper div.container div.left h2 {
+    font-size: 35px;  
+  }
+  #spotlight section.wrapper div.container div.left div.form input {
+    padding: 10px 90px 10px 10px;
+  }
+  #spotlight section.wrapper div.container div.left div.form a {
+    right: 30px;
+  }
+  #feature section.wrapper h3 {
+    font-size: 32px;
+  }
+  #feature section.wrapper div.top div.image-brand {
+    width: 90%;
+  }
+  #feature section.wrapper div.top div.image-brand div.image-inn-nbc {
+    width: 20%;
+    top: 65%;
+    padding: 1px 20px;
+  }
+  #feature section.wrapper div.top div.image-brand div.image-inn-hubspot {
+    width: 22%;
+    top: 68%;
+  }
+  #feature section.wrapper div.bottom div.container div.image-hogan {
+    width: 22%;
+    top: 45%;
+  }
+  #feature section.wrapper div.bottom div.container div.image-bet {
+    top: 45%;
+    width: 26%;
+  }
+  #highlight section.wrapper h4 {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+  #solutions section.wrapper h5 {
+    font-size: 27px;
+  }
+  #highlight div.content div.bap {
+    display: flex;
+    flex-direction: column ;
+  }
+  #highlight div.content div.bap p {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  #highlight div.content div.bap a.button {
+    width: 37%;
+  }
+  #highlight div.content div.image-star {
+    bottom: 90%;
+  }
+  #solutions section.wrapper ul li.left {
+    margin-bottom: 40%;
+  }
+  #solutions section.wrapper ul li.left div.item {
+    top: 65%;
+    left: 0;
+  }
+  #solutions section.wrapper ul li.middle {
+    margin-bottom: 47%;
+  }
+  #solutions section.wrapper ul li.middle div.item {
+    top: 65%;
+    left: 0;
+  }
+  #solutions section.wrapper ul li.right div.item {
+    top: 60%;
+    left: 0;
+  }
+  #resourses {
+    padding: 60px 0;
+  }
+  #resourses section.wrapper h5 {
+    font-size: 33px;
+  }
+  #resourses section.wrapper a.button {
+    width: 70%;
+  }
+  #help section.wrapper div.right {
+    height: auto;
+  }
+  #help section.wrapper div.right h3 {
+    font-size: 20px;
+  }
+  #help section.wrapper div.right ul li.input input {
+    width: 100%;
+    font-size: 14px;
+  }
+  #help section.wrapper div.right ul li.select select {
+    width: 100%;
+    font-size: 14px;
+  }
+  #help section.wrapper div.right a.button {
+    padding: 10px 10px;
+  }
+  footer section.wrapper div.left h6 {
+    font-size: 20px;
+  }
+  footer section.wrapper div.right ul li div.end div.logo {
+    width: 20%;
+    margin: 12px;
+  }
+}
+@media all and (max-width:360px) {
+  header h1 {
+    width: 33%;
+  }
+  #spotlight section.wrapper div.container div.left h2 {
+    font-size: 26px;
+  }
+  #spotlight section.wrapper div.container div.left p {
+    font-size: 14px;
+  }
+  #spotlight section.wrapper div.container div.left div.form a {
+    right: 3px;
+  }
+  #spotlight section.wrapper div.spotlight-bottom ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  #feature section.wrapper div.top div.image-brand div.image-inn-nbc {
+    top: 54%;
+    width: 25%;
+  }
+  #feature section.wrapper div.top div.image-brand div.image-inn-hubspot {
+    top: 58%;
+  }
+  #feature section.wrapper div.top div.image-brand div.image-inn-housingwi {
+    width: 35%;
+    top: 56%;
+  }
+  #feature section.wrapper div.bottom div.container {
+    width: 90%;
+  }
+  #feature section.wrapper div.bottom div.container div.image-hogan {
+    top: 43%;
+  }
+  #feature section.wrapper div.bottom div.container div.image-bet {
+    top: 45%;
+  }
+  #highlight section.wrapper h4 {
+    font-size: 25px;
+  }
+  #highlight section.wrapper ul li {
+    width: 100%;
+  }
+  #highlight div.content div.bap a.button {
+    width: 50%;
+  }
+  #solutions section.wrapper h5 {
+    font-size: 22px;
+  }
+  #solutions section.wrapper ul li.left {
+    margin-bottom: 45%;
+  }
+  #solutions section.wrapper ul li.left div.item {
+    top: 75%;
+  }
+  #solutions section.wrapper ul li.middle {
+    margin-bottom: 50%;
+  }
+  #solutions section.wrapper ul li.middle div.item {
+    top: 78%;
+  }
+  #solutions section.wrapper ul li.right div.item {
+    top: 70%;
+  }
+  #resourses section.wrapper h5 {
+    font-size: 22px;
+  }
+  #help section.wrapper div.left h3 {
+    font-size: 27px;
+    margin-bottom: 30px;
+  }
+  #help section.wrapper div.right div.checkbox input[type=checkbox] {
+    width: 50px;
+  }
+  footer section.wrapper div.left ul.icon li {
+    margin: 0px 10px 10px 0px;
+  }
+}
+@media all and (max-width:320px) {
+  #spotlight section.wrapper div.container div.left div.form a {
+    right: 10px;
+  }
+  #feature section.wrapper div.top div.image-brand div.image-inn-nbc {
+    top: 46%;
+  }
+  #feature section.wrapper div.top div.image-brand div.image-inn-hubspot {
+    width: 30%;
+    top: 50%;
+  }
+  #feature section.wrapper div.top div.image-brand div.image-inn-housingwi {
+    top: 50%;
+  }
+  #feature section.wrapper div.bottom div.container div.image-hogan {
+    top: 40%;
+  }
+  #feature section.wrapper div.bottom div.container div.image-bet {
+    top: 40%;
+  }
+  #highlight div.content div.bap a.button {
+    width: 60%;
+  }
+  #solutions section.wrapper ul li.left div.item {
+    top: 78%;
+  }
+  #solutions section.wrapper ul li.right div.item {
+    top: 72%;
+  }
+}
+
+
+
+
+
+
+
+

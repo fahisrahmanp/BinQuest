@@ -1,0 +1,165 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/logo.png' %}" /> 
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("{% static 'images/add_todobg.avif' %}"); /* Adjust the path to your background image */
+            background-size: cover;
+            background-position: center;
+            color: #fff; /* Text color for better contrast */
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Align items vertically */
+            height: 100vh;
+            margin-bottom: 20px; /* Add margin bottom for spacing */
+        }
+
+        .screen {
+            background-color: rgb(0, 0, 0); /* Semi-transparent black background */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px; /* Add margin bottom for spacing */
+        }
+
+        .screen__content h1 {
+            margin-bottom: 20px;
+        }
+
+        .username {
+            color: #eee613; /* Blue color for username */
+        }
+
+        .login__submit,
+        .button__icon.go_to_map {
+            background-color: #3498db; /* Blue color for buttons */
+            color: #fff;
+            border: none;
+            padding: 15px 30px; /* Adjust padding for each button */
+            cursor: pointer;
+            border-radius: 30px; /* Rounder buttons */
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin-bottom: 0px; /* Add margin bottom for spacing */
+        }
+
+        .button__icon.go_to_todo {
+            background-color: #3498db; /* Blue color for buttons */
+            color: #fff;
+            border: none;
+            padding: 15px 20px; /* Adjust padding for each button */
+            cursor: pointer;
+            border-radius: 30px; /* Rounder buttons */
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin-bottom: 10px; /* Add margin bottom for spacing */
+        }
+
+        .logout-form button {
+            background-color: #3498db; /* Blue color for buttons */
+            color: #fff;
+            border: none;
+            padding: 15px 25px; /* Adjust padding for each button */
+            cursor: pointer;
+            border-radius: 30px; /* Rounder buttons */
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin-bottom: 0px; /* Add margin bottom for spacing */
+        }
+
+        .login__submit:hover,
+        .button__icon.go_to_map:hover,
+        .button__icon.go_to_todo:hover,
+        .logout-form button:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+        }
+
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -20vh;
+        }
+
+        .buttons_screen ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex; /* Flex the list */
+            justify-content: center; /* Center the items horizontally */
+            align-items: center; /* Center the items vertically */
+        }
+
+        .buttons_screen li {
+            margin-bottom: 10px;
+            margin-right: 10px; /* Add some space between buttons */
+        }
+
+        /* Style form input placeholders */
+        input[type="text"]::placeholder,
+        input[type="password"]::placeholder {
+            color: #e3caca; /* Adjust placeholder text color */
+            font-style: italic; /* Adjust placeholder font style */
+            margin-top: 5px; /* Adjust top margin */
+            padding: 15px 10px; /* Adjust padding */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <h1>Hello <span class="username">{{ username }}</span>, Welcome to our page</h1>
+                <form method="post" class="login">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="login__submit">Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons-container">
+        <div class="buttons_screen">
+            <ul>
+                <li class="go_to_map">
+                    <!-- Button to redirect to Google Maps -->
+                    <button onclick="redirectGoogleMaps()" class="button__icon go_to_map">Go to Google Maps</button>
+                </li>
+                <li class="go_to_todo">
+                    <!-- Button to go to the Todo List page -->
+                    <a href="{% url 'todo_list' %}" class="button__icon go_to_todo">Go to Todo List</a>
+                </li>
+                <li class="logout">
+                    <!-- Logout button -->
+                    <form action="{% url 'logout' %}" method="post" class="logout-form">
+                        {% csrf_token %}
+                        <button type="submit" class="button__icon">Logout</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function redirectGoogleMaps() {
+            window.location.href = "https://www.google.com/maps?q=";
+        }
+    </script>
+</body>
+</html>
